@@ -1,3 +1,4 @@
+import random
 def primary():
   f = open("quotes.txt","a")
 
@@ -20,6 +21,14 @@ def primary():
   for i in range(5):
 
     print(i+1,quotes[i], sep=" ")
+
+  #Generating a random quotes
+  lastnumber =len(quotes) 
+  randnumber = random.randint(0,lastnumber)
+  print("Generating a random quote")
+  print(quotes[randnumber])
+  
+  f.close()
 
 
   #print the last line of a file
